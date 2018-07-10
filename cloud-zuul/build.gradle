@@ -1,0 +1,11 @@
+
+dependencies {
+    //zuu的依赖包
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-zuul')
+    //注册中心服务发现依赖
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-zuul
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-sleuth-zipkin'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth'
+
+}

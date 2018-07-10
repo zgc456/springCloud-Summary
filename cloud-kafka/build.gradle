@@ -1,0 +1,8 @@
+
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka
+    compile('org.springframework.cloud:spring-cloud-stream')
+    compile('org.springframework.cloud:spring-cloud-stream-binder-kafka')
+    compile('org.springframework.kafka:spring-kafka')
+}

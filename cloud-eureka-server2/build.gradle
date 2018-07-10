@@ -1,0 +1,6 @@
+
+dependencies {
+    //引入注册中心Eureka服务包
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+
+}

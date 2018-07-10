@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: shop-server
+  cloud:
+    stream:
+      bindings:
+        input:
+        #定义输入topic
+           destination: zhuohua
+        output:
+        #定义输出topic
+           destination: zhuohua
+           #SpringCloud-Stream选用什么技术来进行消息集成
+      default-binder: kafka
+  kafka:
+    #kafka端口号
+    bootstrap-servers: localhost:9092
+    #消息解析编码
+    consumer:
+      group-id: consumer1
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      #消息解析编码
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+      value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+      client-id: producer1
+server:
+  port: 8080

@@ -1,0 +1,796 @@
+2018-07-09 17:31:33.077  INFO [cloud-controller,,,] 576 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2018-07-09 17:31:35.160  INFO [cloud-controller,,,] 576 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=springcloud-summary-config-client-dev, profiles=[dev], label=master, version=01d4ad5e2ba3b63b19e1fcd726ec88a3435e641f, state=null
+2018-07-09 17:31:35.160  INFO [cloud-controller,,,] 576 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/zgc456/SpringCloud-SummaryConfig/springcloud-summary-config-client-dev.properties'}]}
+2018-07-09 17:31:35.295  INFO [cloud-controller,,,] 576 --- [main] c.z.SpringBootApplicationController1     : No active profile set, falling back to default profiles: default
+2018-07-09 17:31:35.339  INFO [cloud-controller,,,] 576 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2796aeae: startup date [Mon Jul 09 17:31:35 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1f2586d6
+2018-07-09 17:31:37.259  INFO [cloud-controller,,,] 576 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f1f02761-a9ca-39d5-ac80-4e893bb47930
+2018-07-09 17:31:37.282  INFO [cloud-controller,,,] 576 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 17:31:37.817  INFO [cloud-controller,,,] 576 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f6489e17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 17:31:37.879  INFO [cloud-controller,,,] 576 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1262a114] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 17:31:38.435  INFO [cloud-controller,,,] 576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8007 (http)
+2018-07-09 17:31:38.532  INFO [cloud-controller,,,] 576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 17:31:38.533  INFO [cloud-controller,,,] 576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 17:31:38.553  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\JDK\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\JDK\jdk1.8.0_25\bin;F:\JDK\gradle-4.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2018-07-09 17:31:38.775  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 17:31:38.775  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3436 ms
+2018-07-09 17:31:39.393  WARN [cloud-controller,,,] 576 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 17:31:39.393  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 17:31:39.431  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@226ad778
+2018-07-09 17:31:43.151  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 17:31:43.152  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2018-07-09 17:31:43.152  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-07-09 17:31:43.152  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 17:31:43.152  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 17:31:43.152  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 17:31:43.152  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-07-09 17:31:43.153  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-07-09 17:31:43.153  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet proxyStreamServlet mapped to [/proxy.stream]
+2018-07-09 17:31:43.154  INFO [cloud-controller,,,] 576 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-09 17:31:43.313  INFO [cloud-controller,,,] 576 --- [main] com.zheng.config.DataSourceConfig        : 数据源加载成功
+2018-07-09 17:31:43.325  INFO [cloud-controller,,,] 576 --- [main] com.zheng.config.DataSourceConfig        : 数据库连接正常
+2018-07-09 17:31:44.074  INFO [cloud-controller,,,] 576 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2796aeae: startup date [Mon Jul 09 17:31:35 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1f2586d6] and template loader path [classpath:/templates/]
+2018-07-09 17:31:44.079  INFO [cloud-controller,,,] 576 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-07-09 17:31:44.177  WARN [cloud-controller,,,] 576 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 17:31:44.177  INFO [cloud-controller,,,] 576 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 17:31:44.342  INFO [cloud-controller,,,] 576 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 17:31:44.748  INFO [cloud-controller,,,] 576 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2796aeae: startup date [Mon Jul 09 17:31:35 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1f2586d6
+2018-07-09 17:31:44.851  INFO [cloud-controller,,,] 576 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.zheng.controller.PageController.index(org.springframework.ui.Model)
+2018-07-09 17:31:44.852  INFO [cloud-controller,,,] 576 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.error()
+2018-07-09 17:31:44.853  INFO [cloud-controller,,,] 576 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectAll]}" onto public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.selectClassesAll()
+2018-07-09 17:31:44.853  INFO [cloud-controller,,,] 576 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix/{path}]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.monitor(java.lang.String,org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2018-07-09 17:31:44.853  INFO [cloud-controller,,,] 576 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.home(org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2018-07-09 17:31:44.870  WARN [cloud-controller,,,] 576 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
+public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+to {[/error]}: There is already 'studentController' bean method
+public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.error() mapped.
+2018-07-09 17:31:44.908  WARN [cloud-controller,,,] 576 --- [main] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method 'close' failed on bean with name 'eurekaRegistration': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-07-09 17:31:44.918  INFO [cloud-controller,,,] 576 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@308f5d35}] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-localhost: startup date [Mon Jul 09 17:31:44 CST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2796aeae
+2018-07-09 17:31:44.966  INFO [cloud-controller,,,] 576 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@308f5d35}] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 17:31:44.989  WARN [cloud-controller,,,] 576 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@308f5d35}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-07-09 17:31:44.992  INFO [cloud-controller,,,] 576 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-09 17:31:45.045  WARN [cloud-controller,,,] 576 --- [localhost-startStop-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+2018-07-09 17:31:45.085  INFO [cloud-controller,,,] 576 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-07-09 17:31:45.128 ERROR [cloud-controller,,,] 576 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
+public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+to {[/error]}: There is already 'studentController' bean method
+public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.error() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1708) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$128/1412794598.getObject(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at com.zheng.SpringBootApplicationController1.main(SpringBootApplicationController1.java:20) [classes/:na]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
+public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+to {[/error]}: There is already 'studentController' bean method
+public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.error() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:580) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:544) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:250) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$$Lambda$455/728985582.accept(Unknown Source) ~[na:na]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676) ~[na:1.8.0_25]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:248) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:218) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:188) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:129) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	... 17 common frames omitted
+
+2018-07-09 17:32:22.579  INFO [cloud-controller,,,] 20016 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2018-07-09 17:32:24.544  INFO [cloud-controller,,,] 20016 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=springcloud-summary-config-client-dev, profiles=[dev], label=master, version=01d4ad5e2ba3b63b19e1fcd726ec88a3435e641f, state=null
+2018-07-09 17:32:24.544  INFO [cloud-controller,,,] 20016 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/zgc456/SpringCloud-SummaryConfig/springcloud-summary-config-client-dev.properties'}]}
+2018-07-09 17:32:24.638  INFO [cloud-controller,,,] 20016 --- [main] c.z.SpringBootApplicationController1     : No active profile set, falling back to default profiles: default
+2018-07-09 17:32:24.653  INFO [cloud-controller,,,] 20016 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1339e7aa: startup date [Mon Jul 09 17:32:24 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@702657cc
+2018-07-09 17:32:26.521  INFO [cloud-controller,,,] 20016 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f1f02761-a9ca-39d5-ac80-4e893bb47930
+2018-07-09 17:32:26.546  INFO [cloud-controller,,,] 20016 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 17:32:27.171  INFO [cloud-controller,,,] 20016 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b21360c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 17:32:27.260  INFO [cloud-controller,,,] 20016 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ce2d63c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 17:32:28.093  INFO [cloud-controller,,,] 20016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8007 (http)
+2018-07-09 17:32:28.149  INFO [cloud-controller,,,] 20016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 17:32:28.149  INFO [cloud-controller,,,] 20016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 17:32:28.168  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\JDK\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\JDK\jdk1.8.0_25\bin;F:\JDK\gradle-4.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2018-07-09 17:32:28.323  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 17:32:28.324  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3671 ms
+2018-07-09 17:32:28.980  WARN [cloud-controller,,,] 20016 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 17:32:28.980  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 17:32:29.050  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@193f7419
+2018-07-09 17:32:32.276  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 17:32:32.277  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2018-07-09 17:32:32.277  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-07-09 17:32:32.277  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 17:32:32.277  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 17:32:32.277  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 17:32:32.277  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-07-09 17:32:32.277  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-07-09 17:32:32.278  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet proxyStreamServlet mapped to [/proxy.stream]
+2018-07-09 17:32:32.279  INFO [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-09 17:32:32.365  INFO [cloud-controller,,,] 20016 --- [main] com.zheng.config.DataSourceConfig        : 数据源加载成功
+2018-07-09 17:32:32.376  INFO [cloud-controller,,,] 20016 --- [main] com.zheng.config.DataSourceConfig        : 数据库连接正常
+2018-07-09 17:32:33.023  INFO [cloud-controller,,,] 20016 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1339e7aa: startup date [Mon Jul 09 17:32:24 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@702657cc] and template loader path [classpath:/templates/]
+2018-07-09 17:32:33.024  INFO [cloud-controller,,,] 20016 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-07-09 17:32:33.110  WARN [cloud-controller,,,] 20016 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 17:32:33.110  INFO [cloud-controller,,,] 20016 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 17:32:33.262  INFO [cloud-controller,,,] 20016 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 17:32:33.648  INFO [cloud-controller,,,] 20016 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1339e7aa: startup date [Mon Jul 09 17:32:24 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@702657cc
+2018-07-09 17:32:33.743  INFO [cloud-controller,,,] 20016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.zheng.controller.PageController.index(org.springframework.ui.Model)
+2018-07-09 17:32:33.744  INFO [cloud-controller,,,] 20016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.error()
+2018-07-09 17:32:33.744  INFO [cloud-controller,,,] 20016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectAll]}" onto public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.selectClassesAll()
+2018-07-09 17:32:33.745  INFO [cloud-controller,,,] 20016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix/{path}]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.monitor(java.lang.String,org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2018-07-09 17:32:33.745  INFO [cloud-controller,,,] 20016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.home(org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2018-07-09 17:32:33.749  WARN [cloud-controller,,,] 20016 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
+public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+to {[/error]}: There is already 'studentController' bean method
+public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.error() mapped.
+2018-07-09 17:32:33.762  WARN [cloud-controller,,,] 20016 --- [main] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method 'close' failed on bean with name 'eurekaRegistration': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-07-09 17:32:34.460  INFO [cloud-controller,,,] 20016 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@634c500a}] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-localhost: startup date [Mon Jul 09 17:32:34 CST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1339e7aa
+2018-07-09 17:32:34.510  INFO [cloud-controller,,,] 20016 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@634c500a}] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 17:32:34.524  WARN [cloud-controller,,,] 20016 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@634c500a}] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-07-09 17:32:34.526  INFO [cloud-controller,,,] 20016 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-09 17:32:34.542  WARN [cloud-controller,,,] 20016 --- [localhost-startStop-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+2018-07-09 17:32:34.558  INFO [cloud-controller,,,] 20016 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-07-09 17:32:34.571 ERROR [cloud-controller,,,] 20016 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
+public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+to {[/error]}: There is already 'studentController' bean method
+public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.error() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1708) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$121/1201173334.getObject(Unknown Source) ~[na:na]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at com.zheng.SpringBootApplicationController1.main(SpringBootApplicationController1.java:20) [classes/:na]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'basicErrorController' method 
+public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+to {[/error]}: There is already 'studentController' bean method
+public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.error() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:580) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:544) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:250) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$$Lambda$455/1040477753.accept(Unknown Source) ~[na:na]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676) ~[na:1.8.0_25]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:248) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:218) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:188) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:129) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	... 17 common frames omitted
+
+2018-07-09 17:35:14.525  INFO [cloud-controller,,,] 19912 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2018-07-09 17:35:16.341  INFO [cloud-controller,,,] 19912 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=springcloud-summary-config-client-dev, profiles=[dev], label=master, version=01d4ad5e2ba3b63b19e1fcd726ec88a3435e641f, state=null
+2018-07-09 17:35:16.342  INFO [cloud-controller,,,] 19912 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/zgc456/SpringCloud-SummaryConfig/springcloud-summary-config-client-dev.properties'}]}
+2018-07-09 17:35:16.376  INFO [cloud-controller,,,] 19912 --- [main] c.z.SpringBootApplicationController1     : No active profile set, falling back to default profiles: default
+2018-07-09 17:35:16.392  INFO [cloud-controller,,,] 19912 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a67e3c6: startup date [Mon Jul 09 17:35:16 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@77c2494c
+2018-07-09 17:35:17.949  INFO [cloud-controller,,,] 19912 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f1f02761-a9ca-39d5-ac80-4e893bb47930
+2018-07-09 17:35:18.008  INFO [cloud-controller,,,] 19912 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 17:35:18.508  INFO [cloud-controller,,,] 19912 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da6c177b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 17:35:18.590  INFO [cloud-controller,,,] 19912 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f6861a78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 17:35:19.225  INFO [cloud-controller,,,] 19912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8007 (http)
+2018-07-09 17:35:19.264  INFO [cloud-controller,,,] 19912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 17:35:19.264  INFO [cloud-controller,,,] 19912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 17:35:19.270  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\JDK\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\JDK\jdk1.8.0_25\bin;F:\JDK\gradle-4.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2018-07-09 17:35:19.378  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 17:35:19.379  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2986 ms
+2018-07-09 17:35:19.951  WARN [cloud-controller,,,] 19912 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 17:35:19.951  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 17:35:19.971  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@dd2d32f
+2018-07-09 17:35:23.259  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 17:35:23.259  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2018-07-09 17:35:23.259  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-07-09 17:35:23.260  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 17:35:23.260  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 17:35:23.260  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 17:35:23.261  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-07-09 17:35:23.261  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-07-09 17:35:23.261  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet proxyStreamServlet mapped to [/proxy.stream]
+2018-07-09 17:35:23.263  INFO [cloud-controller,,,] 19912 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-09 17:35:23.352  INFO [cloud-controller,,,] 19912 --- [main] com.zheng.config.DataSourceConfig        : 数据源加载成功
+2018-07-09 17:35:23.364  INFO [cloud-controller,,,] 19912 --- [main] com.zheng.config.DataSourceConfig        : 数据库连接正常
+2018-07-09 17:35:23.964  INFO [cloud-controller,,,] 19912 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a67e3c6: startup date [Mon Jul 09 17:35:16 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@77c2494c] and template loader path [classpath:/templates/]
+2018-07-09 17:35:23.966  INFO [cloud-controller,,,] 19912 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-07-09 17:35:24.053  WARN [cloud-controller,,,] 19912 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 17:35:24.053  INFO [cloud-controller,,,] 19912 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 17:35:24.209  INFO [cloud-controller,,,] 19912 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 17:35:24.816  INFO [cloud-controller,,,] 19912 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a67e3c6: startup date [Mon Jul 09 17:35:16 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@77c2494c
+2018-07-09 17:35:24.914  INFO [cloud-controller,,,] 19912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.zheng.controller.PageController.index(org.springframework.ui.Model)
+2018-07-09 17:35:24.915  INFO [cloud-controller,,,] 19912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectAll]}" onto public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.selectClassesAll()
+2018-07-09 17:35:24.916  INFO [cloud-controller,,,] 19912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix/{path}]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.monitor(java.lang.String,org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2018-07-09 17:35:24.916  INFO [cloud-controller,,,] 19912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.home(org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2018-07-09 17:35:24.919  INFO [cloud-controller,,,] 19912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-09 17:35:24.919  INFO [cloud-controller,,,] 19912 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-09 17:35:24.983  INFO [cloud-controller,,,] 19912 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 17:35:24.983  INFO [cloud-controller,,,] 19912 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 17:35:26.879  INFO [cloud-controller,,,] 19912 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-07-09 17:35:26.898  INFO [cloud-controller,,,] 19912 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-07-09 17:35:26.899  INFO [cloud-controller,,,] 19912 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-07-09 17:35:26.900  INFO [cloud-controller,,,] 19912 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-09 17:35:26.988  INFO [cloud-controller,,,] 19912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-09 17:35:26.989  INFO [cloud-controller,,,] 19912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-09 17:35:26.998  INFO [cloud-controller,,,] 19912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-09 17:35:27.000  INFO [cloud-controller,,,] 19912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-09 17:35:27.001  INFO [cloud-controller,,,] 19912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-09 17:35:27.005  INFO [cloud-controller,,,] 19912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-09 17:35:27.043  INFO [cloud-controller,,,] 19912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-09 17:35:27.060  INFO [cloud-controller,,,] 19912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7a67e3c6,type=ConfigurationPropertiesRebinder]
+2018-07-09 17:35:27.067  INFO [cloud-controller,,,] 19912 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-09 17:35:27.081  INFO [cloud-controller,,,] 19912 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-07-09 17:35:27.091  INFO [cloud-controller,,,] 19912 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-07-09 17:35:27.173  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-07-09 17:35:27.605  INFO [cloud-controller,,,] 19912 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-07-09 17:35:27.605  INFO [cloud-controller,,,] 19912 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-07-09 17:35:27.960  INFO [cloud-controller,,,] 19912 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-07-09 17:35:27.961  INFO [cloud-controller,,,] 19912 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-07-09 17:35:28.425  INFO [cloud-controller,,,] 19912 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 17:35:28.697  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-07-09 17:35:28.697  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-07-09 17:35:28.697  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-07-09 17:35:28.697  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-07-09 17:35:28.697  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-07-09 17:35:28.697  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-07-09 17:35:28.697  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-07-09 17:35:28.926  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-07-09 17:35:28.930  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-07-09 17:35:28.933  INFO [cloud-controller,,,] 19912 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-07-09 17:35:28.952  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1531128928936 with initial instances count: 5
+2018-07-09 17:35:28.964  INFO [cloud-controller,,,] 19912 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application cloud-controller with eureka with status UP
+2018-07-09 17:35:28.965  INFO [cloud-controller,,,] 19912 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531128928965, current=UP, previous=STARTING]
+2018-07-09 17:35:28.967  INFO [cloud-controller,,,] 19912 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-CONTROLLER/LAPTOP-R2EKITQC:cloud-controller:8007: registering service...
+2018-07-09 17:35:29.100  INFO [cloud-controller,,,] 19912 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-CONTROLLER/LAPTOP-R2EKITQC:cloud-controller:8007 - registration status: 204
+2018-07-09 17:35:29.177  INFO [cloud-controller,,,] 19912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8007 (http) with context path ''
+2018-07-09 17:35:29.178  INFO [cloud-controller,,,] 19912 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8007
+2018-07-09 17:35:29.181  INFO [cloud-controller,,,] 19912 --- [main] c.z.SpringBootApplicationController1     : Started SpringBootApplicationController1 in 17.059 seconds (JVM running for 18.01)
+2018-07-09 17:35:29.949  INFO [cloud-controller,,,] 19912 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 17:35:29.949  INFO [cloud-controller,,,] 19912 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-09 17:35:30.146  INFO [cloud-controller,,,] 19912 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 196 ms
+2018-07-09 17:35:30.154  INFO [cloud-controller,,,] 19912 --- [RMI TCP Connection(7)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-07-09 17:35:30.759  INFO [cloud-controller,,,] 19912 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2018-07-09 17:35:32.897  INFO [cloud-controller,,,] 19912 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=springcloud-summary-config-client-dev, profiles=[dev], label=master, version=01d4ad5e2ba3b63b19e1fcd726ec88a3435e641f, state=null
+2018-07-09 17:40:28.701  INFO [cloud-controller,,,] 19912 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 17:45:28.704  INFO [cloud-controller,,,] 19912 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 17:47:56.766  INFO [cloud-controller,,,] 15208 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2018-07-09 17:47:58.545  INFO [cloud-controller,,,] 15208 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=springcloud-summary-config-client-dev, profiles=[dev], label=master, version=01d4ad5e2ba3b63b19e1fcd726ec88a3435e641f, state=null
+2018-07-09 17:47:58.545  INFO [cloud-controller,,,] 15208 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/zgc456/SpringCloud-SummaryConfig/springcloud-summary-config-client-dev.properties'}]}
+2018-07-09 17:47:58.591  INFO [cloud-controller,,,] 15208 --- [main] c.z.SpringBootApplicationController1     : No active profile set, falling back to default profiles: default
+2018-07-09 17:47:58.612  INFO [cloud-controller,,,] 15208 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@146dfe6: startup date [Mon Jul 09 17:47:58 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7c6908d7
+2018-07-09 17:48:00.077  INFO [cloud-controller,,,] 15208 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f1f02761-a9ca-39d5-ac80-4e893bb47930
+2018-07-09 17:48:00.105  INFO [cloud-controller,,,] 15208 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 17:48:00.555  INFO [cloud-controller,,,] 15208 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9a14bd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 17:48:00.644  INFO [cloud-controller,,,] 15208 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$25bb4ecf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 17:48:01.078  INFO [cloud-controller,,,] 15208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8007 (http)
+2018-07-09 17:48:01.109  INFO [cloud-controller,,,] 15208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 17:48:01.109  INFO [cloud-controller,,,] 15208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 17:48:01.115  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\JDK\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\JDK\jdk1.8.0_25\bin;F:\JDK\gradle-4.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2018-07-09 17:48:01.208  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 17:48:01.208  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2596 ms
+2018-07-09 17:48:01.685  WARN [cloud-controller,,,] 15208 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 17:48:01.685  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 17:48:01.700  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@217d2ae5
+2018-07-09 17:48:04.678  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 17:48:04.678  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2018-07-09 17:48:04.678  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-07-09 17:48:04.679  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 17:48:04.679  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 17:48:04.679  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 17:48:04.679  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-07-09 17:48:04.679  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-07-09 17:48:04.679  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet proxyStreamServlet mapped to [/proxy.stream]
+2018-07-09 17:48:04.680  INFO [cloud-controller,,,] 15208 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-09 17:48:04.757  INFO [cloud-controller,,,] 15208 --- [main] com.zheng.config.DataSourceConfig        : 数据源加载成功
+2018-07-09 17:48:04.769  INFO [cloud-controller,,,] 15208 --- [main] com.zheng.config.DataSourceConfig        : 数据库连接正常
+2018-07-09 17:48:05.092  INFO [cloud-controller,,,] 15208 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@146dfe6: startup date [Mon Jul 09 17:47:58 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7c6908d7] and template loader path [classpath:/templates/]
+2018-07-09 17:48:05.094  INFO [cloud-controller,,,] 15208 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-07-09 17:48:05.166  WARN [cloud-controller,,,] 15208 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 17:48:05.166  INFO [cloud-controller,,,] 15208 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 17:48:05.339  INFO [cloud-controller,,,] 15208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 17:48:05.757  INFO [cloud-controller,,,] 15208 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@146dfe6: startup date [Mon Jul 09 17:47:58 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7c6908d7
+2018-07-09 17:48:05.875  INFO [cloud-controller,,,] 15208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.zheng.controller.PageController.index(org.springframework.ui.Model)
+2018-07-09 17:48:05.878  INFO [cloud-controller,,,] 15208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[GET]}" onto public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.error()
+2018-07-09 17:48:05.879  INFO [cloud-controller,,,] 15208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectAll]}" onto public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.selectClassesAll()
+2018-07-09 17:48:05.879  INFO [cloud-controller,,,] 15208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix/{path}]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.monitor(java.lang.String,org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2018-07-09 17:48:05.879  INFO [cloud-controller,,,] 15208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.home(org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2018-07-09 17:48:05.882  INFO [cloud-controller,,,] 15208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-09 17:48:05.882  INFO [cloud-controller,,,] 15208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-09 17:48:05.950  INFO [cloud-controller,,,] 15208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 17:48:05.950  INFO [cloud-controller,,,] 15208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 17:48:07.773  INFO [cloud-controller,,,] 15208 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-07-09 17:48:07.791  INFO [cloud-controller,,,] 15208 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-07-09 17:48:07.792  INFO [cloud-controller,,,] 15208 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-07-09 17:48:07.793  INFO [cloud-controller,,,] 15208 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-09 17:48:07.881  INFO [cloud-controller,,,] 15208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-09 17:48:07.882  INFO [cloud-controller,,,] 15208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-09 17:48:07.891  INFO [cloud-controller,,,] 15208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-09 17:48:07.893  INFO [cloud-controller,,,] 15208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-09 17:48:07.894  INFO [cloud-controller,,,] 15208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-09 17:48:07.899  INFO [cloud-controller,,,] 15208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-09 17:48:07.910  INFO [cloud-controller,,,] 15208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-09 17:48:07.927  INFO [cloud-controller,,,] 15208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=146dfe6,type=ConfigurationPropertiesRebinder]
+2018-07-09 17:48:07.934  INFO [cloud-controller,,,] 15208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-09 17:48:07.947  INFO [cloud-controller,,,] 15208 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-07-09 17:48:07.957  INFO [cloud-controller,,,] 15208 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-07-09 17:48:08.033  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-07-09 17:48:08.196  INFO [cloud-controller,,,] 15208 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-07-09 17:48:08.196  INFO [cloud-controller,,,] 15208 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-07-09 17:48:08.366  INFO [cloud-controller,,,] 15208 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-07-09 17:48:08.366  INFO [cloud-controller,,,] 15208 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-07-09 17:48:08.642  INFO [cloud-controller,,,] 15208 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 17:48:08.870  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-07-09 17:48:08.870  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-07-09 17:48:08.870  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-07-09 17:48:08.870  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-07-09 17:48:08.870  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-07-09 17:48:08.871  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-07-09 17:48:08.871  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-07-09 17:48:09.049  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-07-09 17:48:09.052  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-07-09 17:48:09.055  INFO [cloud-controller,,,] 15208 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-07-09 17:48:09.059  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1531129689058 with initial instances count: 7
+2018-07-09 17:48:09.073  INFO [cloud-controller,,,] 15208 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application cloud-controller with eureka with status UP
+2018-07-09 17:48:09.074  INFO [cloud-controller,,,] 15208 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531129689074, current=UP, previous=STARTING]
+2018-07-09 17:48:09.076  INFO [cloud-controller,,,] 15208 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-CONTROLLER/LAPTOP-R2EKITQC:cloud-controller:8007: registering service...
+2018-07-09 17:48:09.130  INFO [cloud-controller,,,] 15208 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-CONTROLLER/LAPTOP-R2EKITQC:cloud-controller:8007 - registration status: 204
+2018-07-09 17:48:09.157  INFO [cloud-controller,,,] 15208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8007 (http) with context path ''
+2018-07-09 17:48:09.158  INFO [cloud-controller,,,] 15208 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8007
+2018-07-09 17:48:09.163  INFO [cloud-controller,,,] 15208 --- [main] c.z.SpringBootApplicationController1     : Started SpringBootApplicationController1 in 14.645 seconds (JVM running for 15.77)
+2018-07-09 17:48:09.945  INFO [cloud-controller,,,] 15208 --- [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 17:48:09.945  INFO [cloud-controller,,,] 15208 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-09 17:48:10.021  INFO [cloud-controller,,,] 15208 --- [RMI TCP Connection(5)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-07-09 17:48:10.033  INFO [cloud-controller,,,] 15208 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 88 ms
+2018-07-09 17:48:10.494  INFO [cloud-controller,,,] 15208 --- [RMI TCP Connection(5)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2018-07-09 17:48:12.277  INFO [cloud-controller,,,] 15208 --- [RMI TCP Connection(5)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=springcloud-summary-config-client-dev, profiles=[dev], label=master, version=01d4ad5e2ba3b63b19e1fcd726ec88a3435e641f, state=null
+2018-07-09 17:50:15.943  INFO [cloud-controller,6c8b801458341f82,88d7882d9c2ceb43,true] 15208 --- [hystrix-StudentController-1] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 17:50:15.943  INFO [cloud-controller,6c8b801458341f82,88d7882d9c2ceb43,true] 15208 --- [hystrix-StudentController-1] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 17:50:16.379  INFO [cloud-controller,,,] 15208 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@51ed3513}] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-localhost: startup date [Mon Jul 09 17:50:16 CST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@146dfe6
+2018-07-09 17:50:16.440  INFO [cloud-controller,,,] 15208 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@51ed3513}] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 17:50:16.847  INFO [cloud-controller,,,] 15208 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@51ed3513}] c.netflix.config.ChainedDynamicProperty  : Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-07-09 17:50:16.870  INFO [cloud-controller,,,] 15208 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@51ed3513}] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2018-07-09 17:50:16.906  INFO [cloud-controller,,,] 15208 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@51ed3513}] c.netflix.loadbalancer.BaseLoadBalancer  : Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-07-09 17:50:16.916  INFO [cloud-controller,,,] 15208 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@51ed3513}] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2018-07-09 17:50:16.921  INFO [cloud-controller,,,] 15208 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@51ed3513}] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2949c6b4
+2018-07-09 17:50:27.226  INFO [cloud-controller,9dfadb695046e07d,ceb998220b051e33,false] 15208 --- [hystrix-StudentController-2] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 17:50:27.226  INFO [cloud-controller,9dfadb695046e07d,ceb998220b051e33,false] 15208 --- [hystrix-StudentController-2] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 17:51:16.182  INFO [cloud-controller,b37cf669d22b32dc,6a7979426fcd89bf,false] 15208 --- [hystrix-StudentController-3] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 17:51:16.183  INFO [cloud-controller,b37cf669d22b32dc,6a7979426fcd89bf,false] 15208 --- [hystrix-StudentController-3] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 17:53:08.877  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 17:58:08.878  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 18:03:08.879  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 18:08:08.881  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 18:46:34.220  INFO [cloud-controller,c6fb1a2a3bbbdab5,c7afb2035c3d41db,false] 15208 --- [hystrix-StudentController-4] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:46:34.221  INFO [cloud-controller,c6fb1a2a3bbbdab5,c7afb2035c3d41db,false] 15208 --- [hystrix-StudentController-4] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:46:35.530  INFO [cloud-controller,df912e4b661cdca0,e0738e7883c5aaf9,false] 15208 --- [hystrix-StudentController-5] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:46:35.531  INFO [cloud-controller,df912e4b661cdca0,e0738e7883c5aaf9,false] 15208 --- [hystrix-StudentController-5] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:46:36.680  INFO [cloud-controller,5361638293387d62,12a261e03aa6ab64,false] 15208 --- [hystrix-StudentController-6] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:46:36.680  INFO [cloud-controller,5361638293387d62,12a261e03aa6ab64,false] 15208 --- [hystrix-StudentController-6] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:46:37.870  INFO [cloud-controller,53dd55fe7b182607,5f89f53e4409151d,true] 15208 --- [hystrix-StudentController-7] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:46:37.871  INFO [cloud-controller,53dd55fe7b182607,5f89f53e4409151d,true] 15208 --- [hystrix-StudentController-7] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:46:38.576  INFO [cloud-controller,0dceb87344bc6bc5,51061fa62549dfab,false] 15208 --- [hystrix-StudentController-8] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:46:38.576  INFO [cloud-controller,0dceb87344bc6bc5,51061fa62549dfab,false] 15208 --- [hystrix-StudentController-8] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:46:47.299  INFO [cloud-controller,79fb95e3eec4a4de,f9b9c25c626d9775,false] 15208 --- [hystrix-StudentController-9] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:46:47.299  INFO [cloud-controller,79fb95e3eec4a4de,f9b9c25c626d9775,false] 15208 --- [hystrix-StudentController-9] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:49:56.572  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 18:52:08.950  INFO [cloud-controller,3be3938daffdd307,36ef005b8ca6438e,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:08.951  INFO [cloud-controller,3be3938daffdd307,36ef005b8ca6438e,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:10.548  INFO [cloud-controller,bd7a1cc3911de3dd,e00337270c76098b,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:10.548  INFO [cloud-controller,bd7a1cc3911de3dd,e00337270c76098b,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:11.917  INFO [cloud-controller,242916bae04268fe,96a4a0e50d550225,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:11.917  INFO [cloud-controller,242916bae04268fe,96a4a0e50d550225,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:13.340  INFO [cloud-controller,5b8642a5a8ef554e,eb5f6c3978660296,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:13.340  INFO [cloud-controller,5b8642a5a8ef554e,eb5f6c3978660296,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:14.565  INFO [cloud-controller,bde06ee244274dd8,efdebdb45be848ec,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:14.565  INFO [cloud-controller,bde06ee244274dd8,efdebdb45be848ec,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:16.809  INFO [cloud-controller,2600828131ab027e,63e7bc0935d278d7,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:16.809  INFO [cloud-controller,2600828131ab027e,63e7bc0935d278d7,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:17.890  INFO [cloud-controller,4b484e9a7a8df254,23708848a55ee95e,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:17.890  INFO [cloud-controller,4b484e9a7a8df254,23708848a55ee95e,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:18.939  INFO [cloud-controller,cb44203390f59c3f,b8ed265ed0508e17,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:18.940  INFO [cloud-controller,cb44203390f59c3f,b8ed265ed0508e17,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:19.454  INFO [cloud-controller,e31db89a76477bb6,30340204c6a538db,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:19.455  INFO [cloud-controller,e31db89a76477bb6,30340204c6a538db,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:20.108  INFO [cloud-controller,4d63af3931b8f7b1,283e1fab9de60589,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:20.108  INFO [cloud-controller,4d63af3931b8f7b1,283e1fab9de60589,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:20.644  INFO [cloud-controller,ab3b7dbc3e3701eb,002a51ace6b8bbbd,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:20.644  INFO [cloud-controller,ab3b7dbc3e3701eb,002a51ace6b8bbbd,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:21.279  INFO [cloud-controller,1013b0f438dbd585,5cb650430ec577eb,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:21.280  INFO [cloud-controller,1013b0f438dbd585,5cb650430ec577eb,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:21.914  INFO [cloud-controller,7828438413cbfaef,6b1792af226dbf4e,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:21.914  INFO [cloud-controller,7828438413cbfaef,6b1792af226dbf4e,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:22.528  INFO [cloud-controller,773ce68a01f7b749,6674f7bf8ddb899f,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:22.528  INFO [cloud-controller,773ce68a01f7b749,6674f7bf8ddb899f,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:52:22.942  INFO [cloud-controller,fa087396abf66f43,8a98c53d82e46df8,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:52:22.942  INFO [cloud-controller,fa087396abf66f43,8a98c53d82e46df8,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:54:56.574  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 18:56:12.441  INFO [cloud-controller,8171db967a431285,c4837ea6bd2ab182,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:56:12.441  INFO [cloud-controller,8171db967a431285,c4837ea6bd2ab182,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:56:13.457  INFO [cloud-controller,ebcde78a1028dd82,567aae74da41e96a,true] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:56:13.457  INFO [cloud-controller,ebcde78a1028dd82,567aae74da41e96a,true] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:56:14.624  INFO [cloud-controller,fb742ac4b9777ac1,228f93ea49230141,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:56:14.624  INFO [cloud-controller,fb742ac4b9777ac1,228f93ea49230141,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:56:15.678  INFO [cloud-controller,bec6b508e593c2e9,bee170e105db1751,true] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:56:15.678  INFO [cloud-controller,bec6b508e593c2e9,bee170e105db1751,true] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:56:17.136  INFO [cloud-controller,ea9dbd6db2916f85,68dbc5d943fa7274,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 18:56:17.136  INFO [cloud-controller,ea9dbd6db2916f85,68dbc5d943fa7274,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 18:59:56.575  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 19:04:56.586  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 19:08:17.996  INFO [cloud-controller,3fa906a0f46891ed,dbd4b94116d0651c,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 19:08:17.996  INFO [cloud-controller,3fa906a0f46891ed,dbd4b94116d0651c,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 19:09:36.183  INFO [cloud-controller,d66c29ed917c894c,07f317e88d3a3190,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 19:09:36.183  INFO [cloud-controller,d66c29ed917c894c,07f317e88d3a3190,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 19:09:38.808  INFO [cloud-controller,01e66e19d7f78b57,b3b3c3b743fdc2b4,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 19:09:38.809  INFO [cloud-controller,01e66e19d7f78b57,b3b3c3b743fdc2b4,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 19:09:40.784  INFO [cloud-controller,5ea38a23f9585f0e,f529073217768556,false] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 19:09:40.784  INFO [cloud-controller,5ea38a23f9585f0e,f529073217768556,false] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 19:09:56.587  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 19:12:27.459  INFO [cloud-controller,e9d94641b28b3857,8505e4265c1a1e94,true] 15208 --- [hystrix-StudentController-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号8007
+2018-07-09 19:12:27.459  INFO [cloud-controller,e9d94641b28b3857,8505e4265c1a1e94,true] 15208 --- [hystrix-StudentController-10] com.zheng.config.DataSourceConfig        : 执行查询方法
+2018-07-09 19:14:56.589  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 19:19:56.655  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 19:24:56.660  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 19:29:56.663  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 19:34:56.687  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 19:39:56.689  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 19:39:57.105  INFO [cloud-controller,fd84cba16a4a3101,2fa74e83f853961d,false] 15208 --- [http-nio-8007-exec-10] com.zheng.controller.PageController      : 开始访问index页面
+2018-07-09 19:39:58.403 ERROR [cloud-controller,fd84cba16a4a3101,2fa74e83f853961d,false] 15208 --- [http-nio-8007-exec-10] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8007-exec-10] Exception processing template "index": Error resolving template "index", template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "index", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:870) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) [spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) [spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) [spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) [spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:48) [spring-cloud-sleuth-core-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:86) [brave-instrumentation-servlet-5.1.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2018-07-09 19:39:58.657 ERROR [cloud-controller,fd84cba16a4a3101,2fa74e83f853961d,false] 15208 --- [http-nio-8007-exec-10] o.s.c.s.i.web.ExceptionLoggingFilter     : Uncaught exception thrown
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "index", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:48) ~[spring-cloud-sleuth-core-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:86) [brave-instrumentation-servlet-5.1.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving template "index", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:870) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	... 57 common frames omitted
+
+2018-07-09 19:39:58.693 ERROR [cloud-controller,,,] 15208 --- [http-nio-8007-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "index", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "index", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:870) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:48) ~[spring-cloud-sleuth-core-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:86) ~[brave-instrumentation-servlet-5.1.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2018-07-09 19:39:58.770  INFO [cloud-controller,fd84cba16a4a3101,2fa74e83f853961d,false] 15208 --- [http-nio-8007-exec-10] com.zheng.controller.StudentController   : 调用selectAll方法，端口号出错了
+2018-07-09 19:44:56.691  INFO [cloud-controller,,,] 15208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 19:49:02.455  INFO [cloud-controller,,,] 17636 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2018-07-09 19:49:05.465  INFO [cloud-controller,,,] 17636 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=springcloud-summary-config-client-dev, profiles=[dev], label=master, version=01d4ad5e2ba3b63b19e1fcd726ec88a3435e641f, state=null
+2018-07-09 19:49:05.466  INFO [cloud-controller,,,] 17636 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/zgc456/SpringCloud-SummaryConfig/springcloud-summary-config-client-dev.properties'}]}
+2018-07-09 19:49:05.545  INFO [cloud-controller,,,] 17636 --- [main] c.z.SpringBootApplicationController1     : No active profile set, falling back to default profiles: default
+2018-07-09 19:49:05.569  INFO [cloud-controller,,,] 17636 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@622ef26a: startup date [Mon Jul 09 19:49:05 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6155d082
+2018-07-09 19:49:07.376  INFO [cloud-controller,,,] 17636 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f1f02761-a9ca-39d5-ac80-4e893bb47930
+2018-07-09 19:49:07.409  INFO [cloud-controller,,,] 17636 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-09 19:49:07.948  INFO [cloud-controller,,,] 17636 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ba779302] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 19:49:08.032  INFO [cloud-controller,,,] 17636 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d69195ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-09 19:49:08.606  INFO [cloud-controller,,,] 17636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8007 (http)
+2018-07-09 19:49:08.650  INFO [cloud-controller,,,] 17636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-09 19:49:08.651  INFO [cloud-controller,,,] 17636 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-09 19:49:08.659  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\JDK\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\JDK\jdk1.8.0_25\bin;F:\JDK\gradle-4.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Git\cmd;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2018-07-09 19:49:08.823  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-09 19:49:08.823  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3254 ms
+2018-07-09 19:49:09.662  WARN [cloud-controller,,,] 17636 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 19:49:09.663  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 19:49:09.683  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@18520c69
+2018-07-09 19:49:13.687  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-09 19:49:13.687  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'tracingFilter' to: [/*]
+2018-07-09 19:49:13.687  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-07-09 19:49:13.688  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-09 19:49:13.688  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-09 19:49:13.688  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-09 19:49:13.688  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-07-09 19:49:13.688  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-07-09 19:49:13.688  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet proxyStreamServlet mapped to [/proxy.stream]
+2018-07-09 19:49:13.691  INFO [cloud-controller,,,] 17636 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-09 19:49:14.007  INFO [cloud-controller,,,] 17636 --- [main] com.zheng.config.DataSourceConfig        : 数据源加载成功
+2018-07-09 19:49:14.025  INFO [cloud-controller,,,] 17636 --- [main] com.zheng.config.DataSourceConfig        : 数据库连接正常
+2018-07-09 19:49:14.563  INFO [cloud-controller,,,] 17636 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@622ef26a: startup date [Mon Jul 09 19:49:05 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6155d082] and template loader path [classpath:/templates/]
+2018-07-09 19:49:14.565  INFO [cloud-controller,,,] 17636 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-07-09 19:49:14.667  WARN [cloud-controller,,,] 17636 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-07-09 19:49:14.668  INFO [cloud-controller,,,] 17636 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-09 19:49:14.966  INFO [cloud-controller,,,] 17636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 19:49:15.503  INFO [cloud-controller,,,] 17636 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@622ef26a: startup date [Mon Jul 09 19:49:05 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6155d082
+2018-07-09 19:49:15.630  INFO [cloud-controller,,,] 17636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.zheng.controller.PageController.index(org.springframework.ui.Model)
+2018-07-09 19:49:15.634  INFO [cloud-controller,,,] 17636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[GET]}" onto public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.error()
+2018-07-09 19:49:15.635  INFO [cloud-controller,,,] 17636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectAll]}" onto public java.util.List<com.zheng.dto.ClassesDTO> com.zheng.controller.StudentController.selectClassesAll()
+2018-07-09 19:49:15.635  INFO [cloud-controller,,,] 17636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix/{path}]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.monitor(java.lang.String,org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2018-07-09 19:49:15.636  INFO [cloud-controller,,,] 17636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.home(org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2018-07-09 19:49:15.638  INFO [cloud-controller,,,] 17636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-09 19:49:15.638  INFO [cloud-controller,,,] 17636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-09 19:49:15.743  INFO [cloud-controller,,,] 17636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 19:49:15.743  INFO [cloud-controller,,,] 17636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-09 19:49:16.150  INFO [cloud-controller,,,] 17636 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-07-09 19:49:18.982  INFO [cloud-controller,,,] 17636 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-07-09 19:49:19.005  INFO [cloud-controller,,,] 17636 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-07-09 19:49:19.007  INFO [cloud-controller,,,] 17636 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-07-09 19:49:19.007  INFO [cloud-controller,,,] 17636 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-09 19:49:19.120  INFO [cloud-controller,,,] 17636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-09 19:49:19.121  INFO [cloud-controller,,,] 17636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-09 19:49:19.136  INFO [cloud-controller,,,] 17636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-09 19:49:19.138  INFO [cloud-controller,,,] 17636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-09 19:49:19.139  INFO [cloud-controller,,,] 17636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-09 19:49:19.145  INFO [cloud-controller,,,] 17636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-09 19:49:19.158  INFO [cloud-controller,,,] 17636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-09 19:49:19.177  INFO [cloud-controller,,,] 17636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=622ef26a,type=ConfigurationPropertiesRebinder]
+2018-07-09 19:49:19.186  INFO [cloud-controller,,,] 17636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-09 19:49:19.199  INFO [cloud-controller,,,] 17636 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-07-09 19:49:19.211  INFO [cloud-controller,,,] 17636 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-07-09 19:49:19.280  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-07-09 19:49:19.453  INFO [cloud-controller,,,] 17636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-07-09 19:49:19.454  INFO [cloud-controller,,,] 17636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-07-09 19:49:19.661  INFO [cloud-controller,,,] 17636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-07-09 19:49:19.661  INFO [cloud-controller,,,] 17636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-07-09 19:49:20.185  INFO [cloud-controller,,,] 17636 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-07-09 19:49:20.435  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-07-09 19:49:20.435  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-07-09 19:49:20.435  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-07-09 19:49:20.435  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-07-09 19:49:20.435  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-07-09 19:49:20.435  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-07-09 19:49:20.435  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-07-09 19:49:20.782  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-07-09 19:49:20.788  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-07-09 19:49:20.791  INFO [cloud-controller,,,] 17636 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-07-09 19:49:20.796  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1531136960795 with initial instances count: 8
+2018-07-09 19:49:20.812  INFO [cloud-controller,,,] 17636 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application cloud-controller with eureka with status UP
+2018-07-09 19:49:20.812  INFO [cloud-controller,,,] 17636 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1531136960812, current=UP, previous=STARTING]
+2018-07-09 19:49:20.815  INFO [cloud-controller,,,] 17636 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-CONTROLLER/LAPTOP-R2EKITQC:cloud-controller:8007: registering service...
+2018-07-09 19:49:20.885  INFO [cloud-controller,,,] 17636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8007 (http) with context path ''
+2018-07-09 19:49:20.885  INFO [cloud-controller,,,] 17636 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8007
+2018-07-09 19:49:20.889  INFO [cloud-controller,,,] 17636 --- [main] c.z.SpringBootApplicationController1     : Started SpringBootApplicationController1 in 21.619 seconds (JVM running for 23.235)
+2018-07-09 19:49:20.954  INFO [cloud-controller,,,] 17636 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-CONTROLLER/LAPTOP-R2EKITQC:cloud-controller:8007 - registration status: 204
+2018-07-09 19:49:21.504  INFO [cloud-controller,,,] 17636 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-09 19:49:21.748  INFO [cloud-controller,,,] 17636 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-09 19:49:21.801  INFO [cloud-controller,,,] 17636 --- [RMI TCP Connection(7)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-07-09 19:49:21.806  INFO [cloud-controller,,,] 17636 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+2018-07-09 19:49:22.035  INFO [cloud-controller,,,] 17636 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2018-07-09 19:49:24.007  INFO [cloud-controller,,,] 17636 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=springcloud-summary-config-client-dev, profiles=[dev], label=master, version=01d4ad5e2ba3b63b19e1fcd726ec88a3435e641f, state=null
+2018-07-09 19:53:31.090  INFO [cloud-controller,bb509a9fe88faf6a,7ec53e08d653b41f,false] 17636 --- [http-nio-8007-exec-2] com.zheng.controller.PageController      : 开始访问index页面
+2018-07-09 19:54:20.440  INFO [cloud-controller,,,] 17636 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

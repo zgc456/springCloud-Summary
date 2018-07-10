@@ -1,0 +1,10 @@
+
+
+dependencies {
+    // https://mvnrepository.com/artifact/io.zipkin.java/zipkin-server
+    compile group: 'io.zipkin.java', name: 'zipkin-server', version: '2.9.4'
+    // https://mvnrepository.com/artifact/io.zipkin.java/zipkin-autoconfigure-ui
+    compile group: 'io.zipkin.java', name: 'zipkin-autoconfigure-ui', version: '2.9.4'
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+
+}

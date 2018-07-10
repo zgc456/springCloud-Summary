@@ -1,0 +1,9 @@
+
+dependencies {
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+    compile group: 'com.netflix.ribbon', name: 'ribbon-core'
+    compile group: 'com.netflix.ribbon', name: 'ribbon-httpclient'
+    compile project(":cloud-api")
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-sleuth-zipkin'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth'
+}

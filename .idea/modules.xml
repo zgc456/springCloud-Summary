@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-api.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-config-server.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-controller.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-controller1.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-controller1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-dao.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-eureka-server1.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-eureka-server1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-eureka-server2/cloud-eureka-server2.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-eureka-server2/cloud-eureka-server2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-kafka.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-redis.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-ribbon.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-sleuth-zipkin/cloud-sleuth-zipkin.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-sleuth-zipkin/cloud-sleuth-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-test-service.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-test-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-thymeleaf.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-util.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cloud-zuul.iml" filepath="$PROJECT_DIR$/.idea/modules/cloud-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springCloud-Summary.iml" filepath="$PROJECT_DIR$/springCloud-Summary.iml" />
+    </modules>
+  </component>
+</project>

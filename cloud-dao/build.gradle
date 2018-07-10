@@ -1,0 +1,8 @@
+dependencies {
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.45'
+    //mybatis-spring集成的依赖
+    compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.3.1'
+    //mybatis依赖包
+    runtime('mysql:mysql-connector-java')
+    compile "com.alibaba:druid:1.0.12"
+}

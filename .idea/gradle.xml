@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="F:/JDK/gradle-4.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/cloud-api" />
+            <option value="$PROJECT_DIR$/cloud-config-server" />
+            <option value="$PROJECT_DIR$/cloud-controller" />
+            <option value="$PROJECT_DIR$/cloud-controller1" />
+            <option value="$PROJECT_DIR$/cloud-dao" />
+            <option value="$PROJECT_DIR$/cloud-eureka-server1" />
+            <option value="$PROJECT_DIR$/cloud-eureka-server2" />
+            <option value="$PROJECT_DIR$/cloud-kafka" />
+            <option value="$PROJECT_DIR$/cloud-redis" />
+            <option value="$PROJECT_DIR$/cloud-ribbon" />
+            <option value="$PROJECT_DIR$/cloud-sleuth-zipkin" />
+            <option value="$PROJECT_DIR$/cloud-test-service" />
+            <option value="$PROJECT_DIR$/cloud-thymeleaf" />
+            <option value="$PROJECT_DIR$/cloud-util" />
+            <option value="$PROJECT_DIR$/cloud-zuul" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="useAutoImport" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

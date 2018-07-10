@@ -1,0 +1,23 @@
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(":cloud-api")
+    compile project(":cloud-test-service")
+    compile project(":cloud-thymeleaf")
+    //分布式配置
+    compile("org.springframework.cloud:spring-cloud-starter-config")
+    //刷新分布式配置
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.0.3.RELEASE'
+
+    //熔断器
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix', version: '1.4.5.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix-dashboard
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix-dashboard', version: '1.4.5.RELEASE'
+
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-sleuth-zipkin'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth'
+
+    //模板引擎
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.0.3.RELEASE'
+}
